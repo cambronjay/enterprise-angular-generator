@@ -17,7 +17,7 @@ import { reducers } from './state/<%=dasherize(name)%>.selectors';
     MaterialModule,
     FlexLayoutModule,
     <%= classify(name) %>Router,
-    StoreModule.forFeature('<%=dasherize(name)%>', reducers),
+    StoreModule.forFeature('<%=camelize(name)%>', reducers),
     EffectsModule.forFeature([<%= classify(name) %>Effects]),
   ],
   declarations: [<%= classify(name) %>ScreenComponent]

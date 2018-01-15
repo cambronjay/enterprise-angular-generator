@@ -7,14 +7,14 @@ export interface <%= classify(name) %>State {
 }
 
 export interface State extends fromRoot.State {
-  <%=dasherize(name)%>: <%= classify(name) %>State;
+  <%=camelize(name)%>: <%= classify(name) %>State;
 }
 
 export const reducers = {
   stateData: from<%= classify(name) %>.reducer
 };
 
-export const select<%= classify(name) %>State = createFeatureSelector<<%= classify(name) %>State>('<%=dasherize(name)%>');
+export const select<%= classify(name) %>State = createFeatureSelector<<%= classify(name) %>State>('<%=camelize(name)%>');
 
 export const select<%= classify(name) %>StateData = createSelector(select<%= classify(name) %>State, (state: <%= classify(name) %>State) => state.stateData);
 

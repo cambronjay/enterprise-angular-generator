@@ -1,6 +1,6 @@
 {
   "name": "enterprise-angular-generator",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A collection of angular generators for enterprise applications.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -35,7 +35,7 @@
     "@types/node": "^8.0.31",
     "jasmine": "^2.8.0",
     "rxjs": "^5.5.2",
-    "typescript": "^2.5.2"
+    "typescript": "^2.4.2"
   },
   "devDependencies": {
     "canonical-path": "0.0.2",
