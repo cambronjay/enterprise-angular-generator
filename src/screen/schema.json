@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "SchemanticsForScreen",
+    "title": "Screen Schema",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "default": "name"
+      },
+      "ngrxFolder": {
+        "type": "string",
+        "default": "state"
+      },      
+      "path": {
+        "type": "string",
+        "default": "screens"
+      },
+      "sourceDir": {
+        "type": "string",
+        "default": "src"
+      }
+    },
+    "required": [
+      "name", "path", "sourceDir"
+    ]
+  }

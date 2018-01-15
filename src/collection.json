@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "screen": {
+      "schema": "./screen/schema.json",
+      "description": "Generates an ngrx and lazy loaded screen component",
+      "factory": "./screen"
+    }
+  }
+}
