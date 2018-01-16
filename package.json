@@ -1,6 +1,6 @@
 {
   "name": "enterprise-angular-generator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A collection of angular generators for enterprise applications.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
