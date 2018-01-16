@@ -11,7 +11,7 @@ import { Action } from '@ngrx/store';
 import 'rxjs/add/observable/of';
 import { Database } from '@ngrx/db';
 import { Load<%= classify(name) %>State, Load<%= classify(name) %>StateSuccess, Load<%= classify(name) %>StateFail, <%= classify(name) %>ActionTypes } from './<%=dasherize(name)%>.actions';
-import { I<%= classify(name) %> } from '../../../interfaces/interfaces';
+import { I<%= classify(name) %> } from '../../../interfaces';
 
 @Injectable()
 export class <%= classify(name) %>Effects {

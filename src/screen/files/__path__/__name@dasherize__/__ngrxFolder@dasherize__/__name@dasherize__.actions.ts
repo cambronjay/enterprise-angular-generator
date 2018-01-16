@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { I<%= classify(name) %> } from '../../../interfaces/interfaces';
+import { I<%= classify(name) %> } from '../../../interfaces';
 
 export enum <%= classify(name) %>ActionTypes {
   Load<%= classify(name) %>State = '[<%= classify(name) %>] Load <%= classify(name) %> State',

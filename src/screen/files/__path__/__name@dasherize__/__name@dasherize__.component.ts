@@ -3,9 +3,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // Animations
 import { slideInDownAnimation } from '../../app/app.animations';
 // Services
-import { AngularMaterialService, ErrorParseService } from '../../services/services';
+import { AngularMaterialService, ErrorParseService } from '../../services';
 // Interfaces
-import { I<%= classify(name) %> } from '../../interfaces/interfaces';
+import { I<%= classify(name) %> } from '../../interfaces';
 // State
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
