@@ -1,5 +1,5 @@
 import { <%= classify(name) %>ActionTypes, <%= classify(name) %>Actions } from './<%=dasherize(name)%>.actions';
-import { I<%= classify(name) %> } from '../../../interfaces';
+import { I<%= classify(name) %> } from '../../../common';
 
 export interface State {
     error: string | null;

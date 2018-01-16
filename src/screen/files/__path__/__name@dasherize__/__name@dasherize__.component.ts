@@ -3,9 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // Animations
 import { slideInDownAnimation } from '../../app/app.animations';
 // Services
-import { AngularMaterialService, ErrorParseService } from '../../services';
-// Interfaces
-import { I<%= classify(name) %> } from '../../interfaces';
+import { AngularMaterialService, ErrorParseService, I<%= classify(name) %> } from '../../common';
 // State
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
