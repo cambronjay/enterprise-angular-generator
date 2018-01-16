@@ -2,7 +2,7 @@ import { Component, OnInit, Input, OnDestroy, ChangeDetectionStrategy, ChangeDet
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // Animations
 import { slideInDownAnimation } from '../../app/app.animations';
-// Services
+// Common
 import { AngularMaterialService, ErrorParseService, I<%= classify(name) %> } from '../../common';
 // State
 import { Store } from '@ngrx/store';
