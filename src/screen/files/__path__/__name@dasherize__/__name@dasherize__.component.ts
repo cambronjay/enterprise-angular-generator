@@ -10,12 +10,12 @@ import { Observable } from 'rxjs/Observable';
 import { Subscription } from 'rxjs/Subscription';
 import * as from<%= classify(name) %> from './state/<%=dasherize(name)%>.selectors';
 import * as <%= classify(name) %>Action from './state/<%=dasherize(name)%>.actions';
-import * as lgeApp from '../../app/state/app.actions';
+import * as app from '../../app/state/app.actions';
 
 @Component({
     selector: '<%=dasherize(name)%>-screen',
-    templateUrl: '<%=dasherize(name)%>.component.html',
-    styleUrls: ['<%=dasherize(name)%>.component.scss'],
+    templateUrl: '<%=dasherize(name)%>.template.html',
+    styleUrls: ['<%=dasherize(name)%>.scss'],
     animations: [slideInDownAnimation],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -83,7 +83,7 @@ export class <%= classify(name) %>ScreenComponent implements OnInit, OnDestroy {
 
     }
     // Opens sidenav if on mobile
-    private openSidenav(): void {
+    public openSidenav(): void {
         this.store.dispatch(new lgeApp.OpenSidenav());
     }
     // Subscribe to state data and mark it for changes
