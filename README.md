@@ -1,4 +1,4 @@
-# Getting Started with Enterprise Angular Generators
+# Getting Started with Enterprise Angular Generator
 
 I will continue to add generators to this module and keep it updated. If you have ideas let me know.
 These generators are based on a unique folder structure and utilize fuctional programming. 
