@@ -84,7 +84,7 @@ export class <%= classify(name) %>ScreenComponent implements OnInit, OnDestroy {
     }
     // Opens sidenav if on mobile
     public openSidenav(): void {
-        this.store.dispatch(new lgeApp.OpenSidenav());
+        this.store.dispatch(new app.OpenSidenav());
     }
     // Subscribe to state data and mark it for changes
     private startSubscriptions(): void {
