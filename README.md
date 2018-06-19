@@ -1,6 +1,6 @@
 # Getting Started with Enterprise Angular Generators
 
-I will continue to add generators to this module and keep it updated. If you have ideas let me know!
+I will continue to add generators to this module and keep it updated. If you have ideas let me know.
 These generators are based on a unique folder structure and utilize fuctional programming. 
 
 ***These generators are meant to be used with my [Angular for Enterprise Template](https://github.com/cambronjay/enterprise-angular-template)
