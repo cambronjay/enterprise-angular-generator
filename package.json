@@ -1,6 +1,6 @@
 {
   "name": "enterprise-angular-generator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A collection of angular generators for enterprise applications.",
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/cambronjay/enterprise-angular-generator/issues"
   },
-  "homepage": "https://github.com/cambronjay/enterprise-angular-generators#readme",
+  "homepage": "https://github.com/cambronjay/enterprise-angular-generator#readme",
   "schematics": "./src/collection.json",
   "dependencies": {
     "@angular-devkit/core": "^0.0.22",
