@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 // Animations
 import { slideInDownAnimation } from '../../app/app.animations';
 // Common
-import { AngularMaterialService, ErrorParseService, I<%= classify(name) %> } from '../../common';
+import { AngularMaterialService, I<%= classify(name) %> } from '../../common';
 // State
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
@@ -34,8 +34,7 @@ export class <%= classify(name) %>ScreenComponent implements OnInit, OnDestroy {
         private store: Store<from<%= classify(name) %>.State>, 
         private ref: ChangeDetectorRef,
         private fb: FormBuilder, 
-        private ams: AngularMaterialService,
-        private errorParse: ErrorParseService
+        private ams: AngularMaterialService
     ) {
         this.selectState();
         this.createForms();
@@ -66,12 +65,7 @@ export class <%= classify(name) %>ScreenComponent implements OnInit, OnDestroy {
       }
     
       private displayError(error: any): void {
-        let errorMessage;
-        if (this.errorParse.foundKeyWord(error, "CORPCOMMONWS")) {
-          errorMessage = this.errorParse.translateCCError(error);
-        } else {
-          errorMessage = error instanceof Object ? error.message : error;
-        }
+        let errorMessage = error instanceof Object ? error.message : error;
         this.ams.showAlert("Loading Error", errorMessage);
         this.ams.alert.afterClosed().subscribe(result => {
           this.store.dispatch(new <%= classify(name) %>Action.<%= classify(name) %>ScreenErrorReset());
